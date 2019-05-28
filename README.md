@@ -16,7 +16,7 @@ df-day-short
 df-military-hour
 df-hour
 
-df-minuites
+df-minutes
 
 df-seconds
 

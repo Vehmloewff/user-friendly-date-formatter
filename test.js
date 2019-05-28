@@ -97,3 +97,9 @@ test('Test for hours', t => {
 		'1'
 	)
 })
+test('Test for minutes', t => {
+	t.equal(
+		df(d, 'df-minutes'),
+		'00'
+	)
+})
