@@ -6,49 +6,49 @@ const later = new Date('2019-12-25');
 
 test('Test for YYYY', t => {
 	t.equal(
-		df(d, 'YYYY'),
+		df(d, 'df-YYYY'),
 		'2019'
 	)
 })
 test('Test for YY', t => {
 	t.equal(
-		df(d, 'YY'),
+		df(d, 'df-YY'),
 		'19'
 	)
 })
 test('Test for M', t => {
 	t.equal(
-		df(d, 'M'),
+		df(d, 'df-M'),
 		'May'
 	)
 	t.equal(
-		df(later, 'M'),
+		df(later, 'df-M'),
 		'December'
 	)
 })
 test('Test for m', t => {
 	t.equal(
-		df(later, 'm'),
+		df(later, 'df-m'),
 		'Dec'
 	)
 })
 test('Test for MM', t => {
 	t.equal(
-		df(d, 'MM'),
+		df(d, 'df-MM'),
 		'05'
 	)
 	t.equal(
-		df(later, 'MM'),
+		df(later, 'df-MM'),
 		'12'
 	)
 })
 test('Test for dM', t => {
 	t.equal(
-		df(d, 'dM'),
+		df(d, 'df-dM'),
 		'5'
 	)
 	t.equal(
-		df(later, 'dM'),
+		df(later, 'df-dM'),
 		'12'
 	)
 })
