@@ -4,51 +4,51 @@ const df = require('./index');
 const d = new Date(1559050001385)
 const later = new Date('2019-12-25');
 
-test('Test for YYYY', t => {
+test('Test for full year', t => {
 	t.equal(
-		df(d, 'df-YYYY'),
+		df(d, 'df-full-year'),
 		'2019'
 	)
 })
-test('Test for YY', t => {
+test('Test for two digit year', t => {
 	t.equal(
-		df(d, 'df-YY'),
+		df(d, 'df-2-digit-year'),
 		'19'
 	)
 })
-test('Test for M', t => {
+test('Test for full month', t => {
 	t.equal(
-		df(d, 'df-M'),
+		df(d, 'df-full-month'),
 		'May'
 	)
 	t.equal(
-		df(later, 'df-M'),
+		df(later, 'df-full-month'),
 		'December'
 	)
 })
-test('Test for m', t => {
+test('Test for month abbr', t => {
 	t.equal(
-		df(later, 'df-m'),
+		df(later, 'df-month-abbr'),
 		'Dec'
 	)
 })
-test('Test for MM', t => {
+test('Test for 2 digit month', t => {
 	t.equal(
-		df(d, 'df-MM'),
+		df(d, 'df-2-digit-month'),
 		'05'
 	)
 	t.equal(
-		df(later, 'df-MM'),
+		df(later, 'df-2-digit-month'),
 		'12'
 	)
 })
-test('Test for dM', t => {
+test('Test for month number', t => {
 	t.equal(
-		df(d, 'df-dM'),
+		df(d, 'df-month-number'),
 		'5'
 	)
 	t.equal(
-		df(later, 'df-dM'),
+		df(later, 'df-month-number'),
 		'12'
 	)
 })
