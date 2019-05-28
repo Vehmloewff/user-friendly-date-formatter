@@ -1,7 +1,7 @@
 const { test } = require('zora');
 const df = require('./index');
 
-const d = new Date(1559050001385)
+const d = new Date(1559066423330) // 5/28/19 at about 1:00:37 pm
 const later = new Date('2019-12-25');
 const earlier = new Date('2019-11-2');
 
@@ -71,5 +71,29 @@ test('Test for 2 digit date', t => {
 	t.equal(
 		df(earlier, 'df-2-digit-date'),
 		'02'
+	)
+})
+test('Test for day', t => {
+	t.equal(
+		df(d, 'df-day'),
+		'Tuesday'
+	)
+	t.equal(
+		df(d, 'df-day-abbr'),
+		'Tue'
+	)
+	t.equal(
+		df(d, 'df-day-short'),
+		'Tu'
+	)
+})
+test('Test for hours', t => {
+	t.equal(
+		df(d, 'df-military-hour'),
+		'13'
+	)
+	t.equal(
+		df(d, 'df-hour'),
+		'1'
 	)
 })

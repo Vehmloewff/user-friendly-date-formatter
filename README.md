@@ -11,6 +11,7 @@ df-2-digit-date
 
 df-day
 df-day-abbr
+df-day-short
 
 df-military-hour
 df-hour

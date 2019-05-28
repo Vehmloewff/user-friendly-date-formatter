@@ -24,5 +24,8 @@
 	"homepage": "https://github.com/Vehmloewff/user-friendly-date-fromatter#readme",
 	"devDependencies": {
 		"zora": "^3.0.1"
+	},
+	"dependencies": {
+		"days": "^1.1.1"
 	}
 }
