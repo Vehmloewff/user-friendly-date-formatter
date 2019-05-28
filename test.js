@@ -127,3 +127,9 @@ test('Test for time', t => {
 		'1559066423330'
 	)
 })
+test('Test the date-formatter', t => {
+	t.equal(
+		df(d, 'df-month-abbr df-date, df-full-year at df-hour:df-minutes df-suffix'),
+		'May 28, 2019 at 1:00 pm'
+	)
+})
