@@ -10,47 +10,47 @@ $ npm i user-friendly-date-formatter
 ```js
 const df = require('user-friendly-date-formatter'); // or import df from 'user-friendly-date-formatter'
 
-const userFriendlyDate = df(new Date(1159066423330), 'df-month-abbr df-date, df-full-year at df-hour:df-minutes df-suffix');
+const userFriendlyDate = df(new Date(1159066423330), '%fM %D, %YYYY at %h:%m %a');
 console.log(userFriendlyDate);
 // -> Sep 23, 2006 at 9:53 pm
 ```
 
 # API
 #### Year
-- `df-full-year`
-- `df-2-digit-year`
+- `%YYYY`
+- `%YY`
 
 #### Month
-- `df-full-month`
-- `df-month-abbr`
-- `df-2-digit-month`
-- `df-month-number`
+- `%fMM`
+- `%fM`
+- `%MM`
+- `%M`
 
 #### Date
-- `df-date`
-- `df-2-digit-date`
+- `%DD`
+- `%D`
 
 #### Day
-- `df-day`
-- `df-day-abbr`
-- `df-day-short`
+- `%ddd`
+- `%dd`
+- `%d`
 
 #### Hour
-- `df-military-hour`
-- `df-hour`
+- `%H`
+- `%h`
 
 #### Minute
-- `df-minutes`
+- `%m`
 
 #### Second
-- `df-seconds`
+- `%s`
 
-#### Milisecond
-- `df-milliseconds`
-- `df-time`
+#### Millisecond
+- `%l`
+- `%t`
 
 #### Suffix
-- `df-suffix`
+- `%a`
 
 
 Hope this package helps you!
