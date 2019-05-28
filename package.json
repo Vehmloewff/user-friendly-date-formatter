@@ -1,0 +1,25 @@
+{
+	"name": "user-friendly-date-fromatter",
+	"version": "1.0.0",
+	"description": "Display the date and time in a simple, user-friendly way.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Vehmloewff/user-friendly-date-fromatter.git"
+	},
+	"keywords": [
+		"date",
+		"user-friendly",
+		"time",
+		"formatter"
+	],
+	"author": "Vehmloewff",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Vehmloewff/user-friendly-date-fromatter/issues"
+	},
+	"homepage": "https://github.com/Vehmloewff/user-friendly-date-fromatter#readme"
+}
