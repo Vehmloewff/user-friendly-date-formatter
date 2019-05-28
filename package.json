@@ -1,5 +1,5 @@
 {
-	"name": "user-friendly-date-fromatter",
+	"name": "user-friendly-date-formatter",
 	"version": "1.0.0",
 	"description": "Display the date and time in a simple, user-friendly way.",
 	"main": "index.js",
