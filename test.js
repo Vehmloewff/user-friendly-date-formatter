@@ -115,3 +115,15 @@ test('Test for milliseconds', t => {
 		'330'
 	)
 })
+test('Test for suffix', t => {
+	t.equal(
+		df(d, 'df-suffix'),
+		'pm'
+	)
+})
+test('Test for time', t => {
+	t.equal(
+		df(d, 'df-time'),
+		'1559066423330'
+	)
+})
