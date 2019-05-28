@@ -1,4 +1,8 @@
-const days = require('days');
+const days = {
+	short: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+	abbr: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+	en: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+}
 const monthAbbr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const militaryHours = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
@@ -16,7 +20,7 @@ module.exports = (d, format) => {
 	.replace(/df-2-digit-date/, String(d.getDate()).length == 1 ? `0${d.getDate()}` : d.getDate() )
 	.replace(/df-day-abbr/g, days.abbr[d.getDay()])
 	.replace(/df-day-short/g, days.short[d.getDay()])
-	.replace(/df-day/g, days[d.getDay()])
+	.replace(/df-day/g, days.en[d.getDay()])
 	.replace(/df-military-hour/g, militaryHours[d.getHours()])
 	.replace(/df-hour/g, hours[d.getHours()])
 	.replace(/df-minutes/g, String(d.getMinutes()).length == 1 ? `0${d.getMinutes()}` : d.getMinutes() )
