@@ -1,3 +1,4 @@
 module.exports = (d, format) => {
-	return d.getFullYear();
+	return format
+	.replace(/YYYY/g, d.getFullYear())
 }

@@ -4,7 +4,7 @@
 	"description": "Display the date and time in a simple, user-friendly way.",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "node test.js"
 	},
 	"repository": {
 		"type": "git",
