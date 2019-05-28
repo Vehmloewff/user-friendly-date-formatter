@@ -10,9 +10,9 @@ $ npm i user-friendly-date-formatter
 ```js
 const df = require('user-friendly-date-formatter'); // or import df from 'user-friendly-date-formatter'
 
-const userFriendlyDate = df(new Date(1559066423330), 'df-month-abbr df-date, df-full-year at df-hour:df-minutes df-suffix');
+const userFriendlyDate = df(new Date(1159066423330), 'df-month-abbr df-date, df-full-year at df-hour:df-minutes df-suffix');
 console.log(userFriendlyDate);
-// -> May 28, 2019 at 1:00 pm
+// -> Sep 23, 2006 at 9:53 pm
 ```
 
 # API
