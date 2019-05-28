@@ -19,5 +19,7 @@ module.exports = (d, format) => {
 	.replace(/df-day/g, days[d.getDay()])
 	.replace(/df-military-hour/g, militaryHours[d.getHours()])
 	.replace(/df-hour/g, hours[d.getHours()])
-	.replace(/df-minutes/g, String(d.getMinutes()).length == 1 ? `0${d.getMinutes()}` : d.getMinutes())
+	.replace(/df-minutes/g, String(d.getMinutes()).length == 1 ? `0${d.getMinutes()}` : d.getMinutes() )
+	.replace(/df-seconds/g, String(d.getSeconds()).length == 1 ? `0${d.getSeconds()}` : d.getSeconds() )
+	.replace(/df-milliseconds/g, String(d.getMilliseconds()).length == 3 ? d.getMilliseconds() : String(d.getMilliseconds()).length == 1 ? `00${d.getMilliseconds()}` : `0${d.getMilliseconds()}` )
 }

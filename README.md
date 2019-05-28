@@ -20,7 +20,7 @@ df-minutes
 
 df-seconds
 
-df-miliseconds
+df-milliseconds
 
 df-suffix
 

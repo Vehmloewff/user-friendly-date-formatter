@@ -1,7 +1,7 @@
 const { test } = require('zora');
 const df = require('./index');
 
-const d = new Date(1559066423330) // 5/28/19 at about 1:00:37 pm
+const d = new Date(1559066423330) // 5/28/19 at about 1:00:23 pm
 const later = new Date('2019-12-25');
 const earlier = new Date('2019-11-2');
 
@@ -101,5 +101,17 @@ test('Test for minutes', t => {
 	t.equal(
 		df(d, 'df-minutes'),
 		'00'
+	)
+})
+test('Test for seconds', t => {
+	t.equal(
+		df(d, 'df-seconds'),
+		'23'
+	)
+})
+test('Test for milliseconds', t => {
+	t.equal(
+		df(d, 'df-milliseconds'),
+		'330'
 	)
 })
