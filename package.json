@@ -21,5 +21,8 @@
 	"bugs": {
 		"url": "https://github.com/Vehmloewff/user-friendly-date-fromatter/issues"
 	},
-	"homepage": "https://github.com/Vehmloewff/user-friendly-date-fromatter#readme"
+	"homepage": "https://github.com/Vehmloewff/user-friendly-date-fromatter#readme",
+	"devDependencies": {
+		"zora": "^3.0.1"
+	}
 }
