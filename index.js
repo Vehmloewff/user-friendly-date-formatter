@@ -9,4 +9,6 @@ module.exports = (d, format) => {
 	.replace(/df-month-number/g, d.getMonth() + 1)
 	.replace(/df-full-month/g, months[d.getMonth()])
 	.replace(/df-month-abbr/g, monthAbbr[d.getMonth()])
+	.replace(/df-date/g, d.getDate())
+	.replace(/df-2-digit-date/, String(d.getDate()).length == 1 ? `0${d.getDate()}` : d.getDate() )
 }
